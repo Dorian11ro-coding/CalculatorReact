@@ -15,6 +15,7 @@ if (choice === "1") {
     num2 = prompt("Number 2: ")
     sum = parseFloat(num1) + parseFloat(num2)
     console.log("Addition of " + num1 + " and " + num2 + " is " + sum);
+    return 0;
 
 }
 
@@ -23,6 +24,7 @@ if (choice === "2"){
     num2 = prompt("Number 2: ")
     sum = parseFloat(num1) - parseFloat(num2)
     console.log("Subtraction of " + num1 + " and " + num2 + " is " + sum);
+    return 0;
 }
 
 if (choice === "3"){
@@ -30,6 +32,7 @@ if (choice === "3"){
     num2 = prompt("Number 2: ")
     sum = parseFloat(num1) * parseFloat(num2)
     console.log("Multiplication of " + num1 + " and " + num2 + " is " + sum);
+    return 0;
 }
 
 if (choice === "4"){
@@ -37,6 +40,7 @@ if (choice === "4"){
     num2 = prompt("Number 2: ")
     sum = parseFloat(num1) / parseFloat(num2)
     console.log("Division of " + num1 + " and " + num2 + " is " + sum);
+    return 0;
 }
 
 if (choice === "5"){
@@ -44,6 +48,7 @@ if (choice === "5"){
     num2 = prompt("Exponent: ")
     sum = Math.pow(parseFloat(num1), parseFloat(num2))
     console.log(num1 + " to the power of " + num2 + " is " + sum);
+    return 0;
 }
 
 if (choice === "6"){
@@ -51,10 +56,17 @@ if (choice === "6"){
     radius = prompt("What is the radius of the circle? : ")
     area = pi * parseFloat(radius) * parseFloat(radius)
     console.log("The area of the circle is " + area);
+    return 0;
 }
 
 if (choice === "7"){
     num1 = prompt("Number: ")
     sqrtsum = Math.sqrt(num1)
     console.log("The square root of " + num1 + " is " + sqrtsum);
+    return 0;
+}
+
+else{
+    console.log("That is not an option..")
+    return 0;
 }
